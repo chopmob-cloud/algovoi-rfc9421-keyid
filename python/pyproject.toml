@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "algovoi-rfc9421-keyid"
+version = "0.1.0"
+description = "SSRF-guarded resolver for RFC 9421 signature keyids (did:key, did:web, HTTPS) to Ed25519 public keys"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "AlgoVoi", email = "chopmob@gmail.com" }]
+keywords = ["rfc9421", "keyid", "did:key", "did:web", "ed25519", "ssrf", "http-signatures"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Internet :: WWW/HTTP",
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+# Only needed to accept PEM-encoded public keys; every other shape is stdlib-only.
+pem = ["cryptography>=41"]
+
+[project.urls]
+Homepage = "https://github.com/chopmob-cloud/algovoi-rfc9421-keyid"
+Repository = "https://github.com/chopmob-cloud/algovoi-rfc9421-keyid"
+
+[tool.hatch.build.targets.wheel]
+packages = ["algovoi_rfc9421_keyid"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

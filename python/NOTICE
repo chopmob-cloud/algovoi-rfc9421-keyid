@@ -1,0 +1,13 @@
+AlgoVoi RFC 9421 keyid Resolver
+Copyright 2026 Christopher Hopley / AlgoVoi (chopmob-cloud)
+
+This product includes software authored by Christopher Hopley (AlgoVoi),
+licensed under the Apache License, Version 2.0.
+
+It resolves RFC 9421 signature keyids (did:key, did:web, and HTTPS key
+sources) to raw Ed25519 public keys, with an SSRF-guarded resolver, and
+provides the inverse key-publication helpers. Companion to the
+algovoi-rfc9421-verifier and algovoi-rfc9421-signer packages.
+
+When redistributing this work or derivative works, retain this NOTICE per
+Apache License, Version 2.0, Section 4(d).
