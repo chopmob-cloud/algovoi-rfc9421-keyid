@@ -1,7 +1,7 @@
 # algovoi-rfc9421-keyid
 
 
-[![PyPI](https://img.shields.io/pypi/v/algovoi-rfc9421-keyid)](https://pypi.org/project/algovoi-rfc9421-keyid/)
+[![PyPI](https://img.shields.io/pypi/v/algovoi-rfc9421-keyid)](https://pypi.org/project/algovoi-rfc9421-keyid/) [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 
 SSRF-guarded resolution of an RFC 9421 signature `keyid` to a raw 32-byte
 Ed25519 public key, plus the inverse key-publication helpers. Companion to
